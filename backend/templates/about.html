@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AgriVision+</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css " rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #60ad5e;
+            --primary-dark: #005005;
+            --text-dark: #333;
+            --text-light: #f5f5f5;
+            --background: #f9f9f9;
+            --card-bg: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--background);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary);
+            color: var(--text-light);
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .logo i {
+            font-size: 2rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        .nav-links a:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+        .about-section {
+            margin-top: 2rem;
+        }
+        .about-section h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .about-section p {
+            margin-bottom: 1rem;
+        }
+        .team {
+            margin-top: 2rem;
+        }
+        .team h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .member-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 1rem;
+            text-align: center;
+        }
+        .member-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .member-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .member-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin: 1rem 0;
+        }
+        .footer-column h3 {
+            margin-bottom: 1rem;
+        }
+        .footer-column p {
+            color: #ddd;
+            font-size: 0.9rem;
+        }
+        .footer-column a {
+            color: var(--primary-light);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>AgriVision+</span>
+                </div>
+                <div class="nav-links">
+                    <a href="/"><i class="fas fa-home"></i> Home</a>
+                    <a href="/signin"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="container about-section">
+        <h2>About AgriVision+</h2>
+        <p>Welcome to AgriVision+ — a modern crop disease detection platform powered by AI and built for farmers, agricultural workers, and researchers.</p>
+        <p>We are a team of passionate developers, data scientists, and agricultural experts working together to bring smart technology to rural farming communities.</p>
+        <p>Our goal is to help farmers detect plant diseases early and take quick action — increasing crop yield, reducing losses, and improving food security.</p>
+
+        <div class="team">
+            <h3>Meet the Team</h3>
+            <div class="team-members">
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/100 " alt="Team Member 1">
+                    <h4>Sagar</h4>
+                    <p>Lead Developer & AI Engineer</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/100 " alt="Team Member 2">
+                    <h4>Ananya</h4>
+                    <p>Agricultural Science Consultant</p>
+                </div>
+                <div class="member-card">
+                    <img src="https://via.placeholder.com/100 " alt="Team Member 3">
+                    <h4>Rajat</h4>
+                    <p>UX Designer & Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AgriVision+</h3>
+                    <p>Empowering farmers with AI-based plant disease detection and care advice.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="/">Home</a>
+                    <a href="/signin">Login</a>
+                    <a href="/about">About Us</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: info@agrivision.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
